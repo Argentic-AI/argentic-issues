@@ -1,0 +1,25 @@
+name: Feature request
+description: Suggest something Argentic should do
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This tracker is public. Don't paste keys, secrets or customer data.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: The problem, in your words. Who hits it and how often.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would help
+      description: The change you'd like to see. Optional, but it helps.
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you tried

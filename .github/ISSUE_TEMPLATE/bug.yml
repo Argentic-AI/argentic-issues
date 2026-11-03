@@ -1,0 +1,55 @@
+name: Bug report
+description: Something in Argentic broke or behaves in a way it shouldn't
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting this. **This tracker is public.** Don't paste API keys, model keys, run contents, customer data or anything else you wouldn't post on the internet. For anything private, email hi@getargentic.com instead.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you saw. Include error text, with any secrets removed.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: input
+    id: engine-version
+    attributes:
+      label: Engine version
+      description: The engine version, if you know it. Published results state it.
+      placeholder: e.g. 0.3.1
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      description: The page you were on, e.g. Runs, Approvals, Billing.
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and system
+      placeholder: e.g. Chrome 130 on macOS
+  - type: checkboxes
+    id: redacted
+    attributes:
+      label: Redaction
+      options:
+        - label: I have removed API keys, secrets and customer data from this report.
+          required: true

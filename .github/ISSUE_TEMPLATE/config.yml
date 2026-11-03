@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Docs
+    url: https://getargentic.com/docs/
+    about: Setup, concepts and API reference.
+  - name: Private question or sensitive report
+    url: mailto:hi@getargentic.com
+    about: Anything with keys, customer data or account details goes here, not in a public issue.
